@@ -25,9 +25,9 @@
     "durabilityplus.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15",
+    "fabricloader": ">=0.16",
     "fabric": "*",
-    "minecraft": ">=1.20.5"
+    "minecraft": ">=1.21.6"
   },
   "custom": {
     "modmenu": {
