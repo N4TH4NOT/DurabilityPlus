@@ -1,16 +1,17 @@
 {
   "schemaVersion": 1,
   "id": "durabilityplus",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "DurabilityPlus",
   "description": "Simple durability tooltips.",
   "authors": [
-    "ddeeddii"
+    "ddeeddii",
+    "N4TH4NOT"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/durability-plus/",
-    "sources": "https://github.com/ddeeddii/DurabilityPlus",
-    "issues": "https://github.com/ddeeddii/DurabilityPlus/issues"
+    "sources": "https://github.com/N4TH4NOT/DurabilityPlus",
+    "issues": "https://github.com/N4TH4NOT/DurabilityPlus/issues"
   },
   "license": "MIT",
   "icon": "assets/durabilityplus/icon.png",
@@ -20,6 +21,9 @@
       "com.ddeeddii.durabilityplus.DurabilityPlusClient"
     ]
   },
+  "mixins": [
+    "durabilityplus.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.15",
     "fabric": "*",
