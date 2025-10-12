@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "${description}",
+  "authors": [
+    "ddeeddii",
+    "N4TH4NOT"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/N4TH4NOT/DurabilityPlus",
+    "issues": "https://github.com/N4TH4NOT/DurabilityPlus/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/${id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "${group_id}.DurabilityPlusClient"
+    ]
+  },
+  "mixins": [
+    "${id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "id": "${group_id}",
+      "name": "${name}",
+      "description": "Adds simple and minimal durability tooltips",
+      "icon": "assets/${id}/icon.png"
+    }
+  }
+}
