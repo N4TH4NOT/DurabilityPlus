@@ -17,18 +17,15 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
-}
 
-loom {
-    splitEnvironmentSourceSets()
-
-    mods {
-        "${mod_id}" {
-            sourceSet sourceSets.main
-            sourceSet sourceSets.client
-        }
+    maven {
+        name = 'Cloth Config'
+        url = 'https://maven.shedaniel.me/'
     }
-
+    maven {
+        name = 'Mod Menu'
+        url = 'https://maven.terraformersmc.com/releases/'
+    }
 }
 
 dependencies {
@@ -37,6 +34,13 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}+${project.minecraft_version}"
+
+    // Config dependencies
+    // See https://linkie.shedaniel.dev/dependencies
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}")  {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
+    modApi "com.terraformersmc:modmenu:${project.mod_menu_version}"
 
 }
 
@@ -50,7 +54,9 @@ tasks.named('processResources', ProcessResources).configure {
             version:                project.mod_version,
             description:            project.mod_description,
             group_id:               project.mod_package,
-            fabric_version:         project.fabric_version
+            fabric_version:         project.fabric_version,
+            cloth_config_version:   project.cloth_config_version,
+            mod_menu_version:       project.mod_menu_version
     ]
 
     inputs.properties replaceProperties

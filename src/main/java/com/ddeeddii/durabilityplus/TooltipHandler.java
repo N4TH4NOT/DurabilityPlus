@@ -4,9 +4,11 @@ import net.minecraft.ChatFormatting;
 
 public class TooltipHandler {
     public static ChatFormatting GetFormattingForTooltip(int maxDurability, int currentDurability){
-        if(maxDurability * 0.66f <= currentDurability){
+        ModConfig config = DurabilityPlusClient.getConfig();
+
+        if(maxDurability * (config.yellow_style / 100f) <= currentDurability){
             return ChatFormatting.GREEN;
-        } else if(maxDurability * 0.33f <= currentDurability){
+        } else if(maxDurability * (config.red_style / 100f) <= currentDurability){
             return ChatFormatting.YELLOW;
         }
 
