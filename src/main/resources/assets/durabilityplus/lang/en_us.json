@@ -1,5 +1,7 @@
 {
   "text.autoconfig.durabilityplus.title": "Durability Plus Configuration",
   "text.autoconfig.durabilityplus.option.yellow_style": "Warning Level",
-  "text.autoconfig.durabilityplus.option.red_style": "Critic Level"
+  "text.autoconfig.durabilityplus.option.yellow_style.@Tooltip": "Colorize remaining durability in §eyellow",
+  "text.autoconfig.durabilityplus.option.red_style": "Critic Level",
+  "text.autoconfig.durabilityplus.option.red_style.@Tooltip": "Colorize remaining durability in §cred"
 }
