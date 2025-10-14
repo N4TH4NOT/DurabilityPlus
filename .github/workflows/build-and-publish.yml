@@ -47,6 +47,6 @@ jobs:
       with:
         tag_name: ${{ github.ref_name }}
         files: build/libs/*.jar
-        title: "${{ steps.modprops.outputs.mod_name }} v${{ steps.modprops.outputs.mod_version }} (MC${{ steps.modprops.outputs.minecraft_version }})"
+        name: "${{ steps.modprops.outputs.mod_name }} v${{ steps.modprops.outputs.mod_version }} (MC${{ steps.modprops.outputs.minecraft_version }})"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
