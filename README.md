@@ -9,5 +9,6 @@ Additional features:
 * Use Mojang translations, so text is driven by data instead of begging hard-coded, for example, **Icons** resource pack now works as be intended originally
 * Durability field from advanced tooltips is permanently display and appear only once, because of how this mod work
 * Color level config, you can change when the durability turn to yellow and red.
+* removes dependency on **Fabric API** because it never needed it 
 
-⚠️ This fork require **Fabric API** and **Cloth Config**
+⚠️ This fork require **Cloth Config**
