@@ -1,7 +1,7 @@
 {
   "text.autoconfig.durabilityplus.title": "Configuration de Durability Plus",
-  "text.autoconfig.durabilityplus.option.yellow_style": "Niveau préoccupant",
-  "text.autoconfig.durabilityplus.option.yellow_style.@Tooltip": "Colorise la durabilité restante en §ejaune",
   "text.autoconfig.durabilityplus.option.red_style": "Niveau critique",
-  "text.autoconfig.durabilityplus.option.red_style.@Tooltip": "Colorise la durabilité restante en §crouge"
+  "text.autoconfig.durabilityplus.option.red_style.@Tooltip": "Colorise la durabilité restante en §crouge",
+  "text.autoconfig.durabilityplus.option.yellow_style": "Niveau préoccupant",
+  "text.autoconfig.durabilityplus.option.yellow_style.@Tooltip": "Colorise la durabilité restante en §ejaune"
 }
