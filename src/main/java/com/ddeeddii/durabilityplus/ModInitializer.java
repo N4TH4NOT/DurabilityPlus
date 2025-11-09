@@ -14,7 +14,8 @@ public class ModInitializer
 
     @Override
     public void onInitializeClient() {
-        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
+        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new)
+                .registerSaveListener(ModConfig::validateBeforeSave);
         LOGGER.info("Mod loaded!");
     }
 
